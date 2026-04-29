@@ -37,7 +37,7 @@ print(len(df_train_control), len(df_train_control.SID.unique()))
 #df_train= pd.concat([df_train_case[:20], df_train_control[:20]], axis=0)
 
 
-model_path = "/geode3/projects/IN-REGI-PDM/Delirium/Delirium-Workspace/ara-lena/new_algorithm/paper_3_again/saint/models_huggingface/bioformer-16L"
+model_path = "/geode3/projects/path/paper_3_again/saint/models_huggingface/bioformer-16L"
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 
 if torch.cuda.is_available():
@@ -103,7 +103,7 @@ class BertClassifier(nn.Module):
     def __init__(self):
         super(BertClassifier,self).__init__()
         D_in, H, D_out = 384, 100, 2
-        self.model_path = "/geode3/projects/IN-REGI-PDM/Delirium/Delirium-Workspace/ara-lena/new_algorithm/paper_3_again/saint/models_huggingface/bioformer-16L"
+        self.model_path = "/geode3/projects/path/paper_3_again/saint/models_huggingface/bioformer-16LL"
 
         #check if gpu available
         self.use_gpu = torch.cuda.is_available()
