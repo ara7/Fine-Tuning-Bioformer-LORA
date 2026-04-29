@@ -5,7 +5,7 @@
 #SBATCH -e bioformer_fine_tune.err
 #SBATCH --mail-user=ara@purdue.edu
 #SBATCH --nodes=1
-#SBATCH --gpus-per-node=4
+#SBATCH --gpus-per-node=1
 #SBATCH --time=48:00:00
 #SBATCH --mem=240G
 
